@@ -7,4 +7,8 @@ public class Site {
         this.units = units;
         this.rate = rate;
     }
+
+    public double getBillableAmount() {
+        return getBaseAmount() + getTaxAmount();
+    }
 }
